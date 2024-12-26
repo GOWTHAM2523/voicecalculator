@@ -50,9 +50,97 @@
 
 
 <body>
+
+  <!-- Welcome Section -->
+  <section id="tmWelcome" class="parallax-window showMobile" data-parallax="scroll" data-image-src="img/bg-image.jpg">
+    <div class="container-fluid tm-brand-container-outer">
+      <div class="row">
+        <div class="col-12 row mob-res">
+          <div class="calculator">
+            <input type="text" id="display" class="form-control display" disabled>
+            <div class="row g-2 mt-2">
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('7')">7</button>
+              </div>
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('8')">8</button>
+              </div>
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('9')">9</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-danger" onclick="clearDisplay()">C</button>
+              </div>
+            </div>
+            <div class="row g-2 mt-2">
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('4')">4</button>
+              </div>
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('5')">5</button>
+              </div>
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('6')">6</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-primary" onclick="appendValue('/')">/</button>
+              </div>
+            </div>
+            <div class="row g-2 mt-2">
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('1')">1</button>
+              </div>
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('2')">2</button>
+              </div>
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('3')">3</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-primary" onclick="appendValue('*')">*</button>
+              </div>
+            </div>
+            <div class="row g-2 mt-2">
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('0')">0</button>
+              </div>
+              <div class="col-3">
+                <button class="btn" onclick="appendValue('.')">.</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-primary w-100" onclick="appendValue('-')">-</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-primary" onclick="appendValue('+')">+</button>
+              </div>
+            </div>
+            <div class="row g-2 mt-2">
+              <div class="col-12">
+                <button class="btn btn-success" onclick="calculateResult()">Answer</button>
+              </div>
+            </div>
+            <div class="row g-2 mt-3">
+              <div class="col-12">
+                <button class="btn btn-warning w-100" onclick="showVoiceCommandPopup()">🎤 Voice Command</button>
+              </div>
+            </div>
+          </div>
+          <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner "
+            style="height: 300px;margin-top: auto;">
+            <div class="tm-brand-container text-center">
+              <h1 class="tm-brand-name">Voice Calculator</h1>
+              <p class="tm-brand-description mb-0">Simple. Fast. Smart.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Welcome section -->
+
   <!-- Welcome Section -->
   <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/bg-image.jpg">
-    <div class="container-fluid tm-brand-container-outer">
+    <div class="container-fluid tm-brand-container-outer hide-mobile">
       <div class="row">
         <div class="col-12 row">
           <div class="calculator">
@@ -135,7 +223,7 @@
       </div>
     </div>
 
-    <div class="tm-bg-white-transparent tm-welcome-container">
+    <div class="tm-bg-white-transparent tm-welcome-container position-relative">
       <div class="container-fluid">
         <div class="row h-100">
           <!-- Welcome Text -->
