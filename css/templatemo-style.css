@@ -344,7 +344,7 @@ p {
 
   .showMobile {
     display: flex !important;
-    margin-top: -200px;
+   
   }
   .hide-mobile {
     display: none !important;
@@ -354,10 +354,16 @@ p {
     justify-content: center !important;
     align-items: center !important;
     margin: auto !important;
+    /* margin-top: -200px; */
   }
 
   .mob-res  .calculator {
     margin-bottom: 10px;
+    
+  }
+
+  .mob-par {
+    margin-top: -200px;
   }
 }
 
